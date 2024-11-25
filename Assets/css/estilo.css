@@ -1,0 +1,1162 @@
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+
+/************************ Estrutura básica ******************************/
+* {
+    margin: o;
+    padding: o;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #092946;
+}
+
+h1 {
+    color: #fff;
+}
+
+/**************************** Cabeçalho (Menu) ******************/
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    /* Alinha horizontalmente no centro */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    height: 100%;
+    /* Garante que o contêiner ocupe toda a altura disponível */
+    position: relative;
+    background: url('../imagem/piscina.jpg') no-repeat center center/cover;
+    height: 200px;
+}
+
+.piscina .img-fluid {
+    display: flex;
+    position: relative;
+    width: 560px;
+    height: 160px;
+
+}
+
+h1.texto {
+    text-align: center;
+    /* Garante que o texto dentro de h1 seja centralizado */
+    color: #F6D901;
+    font-size: 2rem;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove padding, se houver */
+    justify-content: center;
+    background-color: #092946;
+}
+
+.navbar {
+    background-color: #092946;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    border: 3px solid rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    /* Suaviza a transição */
+
+    align-items: center;
+}
+
+.navbar-nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    /* Altere a cor conforme necessário */
+}
+
+.navbar-nav a::after {
+    /* content: ''; */
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    /* Reflexo */
+    transform: translateY(100%);
+    /* Começa fora de vista */
+    transition: transform 0.3s ease;
+    /* Suaviza a transição do reflexo */
+}
+
+.navbar-nav a:hover::after {
+    transform: translateY(0);
+    /* Move para a posição original no hover */
+}
+
+/*-------container Apresentação -------*/
+.container-video-apresenta {
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+    text-align: center;
+    height: 600px;
+}
+
+.apresenta {
+    float: center;
+    margin: px;
+    margin-left: 630px;
+    background-image: url(../imagem/tela-video-transp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 640px;
+    height: 360px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-video-apresenta h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-video-apresenta h4 {
+    color: white;
+    text-align: center;
+    padding: px;
+}
+
+#meuVideo {
+    justify-content: center;
+    width: 450px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+/* container Pagina Quem Somos */
+
+.btn.btn-secondary {
+    display: block;
+    /* Faz o botão se comportar como um bloco */
+    margin: 20px auto;
+    /* Centraliza com margens automáticas */
+    padding: 10px 20px;
+    /* Ajuste o padding conforme necessário */
+    background-color: #6c757d;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    transition: background-color 0.3s ease;
+    /* Transição suave para o efeito hover */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    width: 10%;
+    /* Largura ajustada ao conteúdo */
+}
+
+.btn.btn-secondary:hover {
+    background-color: #5a6268;
+    /* Cor de fundo alterada ao passar o mouse */
+    cursor: pointer;
+    /* Altera o cursor para indicar que é clicável */
+}
+
+.container-quem-somos {
+    display: flex;
+    /* Ativa o Flexbox para o alinhamento */
+    flex-direction: column;
+    /* Organiza os elementos na coluna */
+    justify-content: center;
+    /* Alinha os itens no centro verticalmente */
+    align-items: center;
+    /* Alinha os itens no centro horizontalmente */
+    min-height: 100vh;
+    /* A section ocupa toda a altura da tela */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Garante que o texto dentro da section fique centralizado */
+    background-color: white;
+}
+
+.container-quem-somos .servico-texto-realce {
+    color: #D43F38;
+    font-weight: bold;
+}
+
+.container-quem-somos .servico {
+    float: center;
+    margin: 60px auto;
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-quem-somos .servico .icones {
+    margin-bottom: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.container-quem-somos .servico .foto_capa {
+    margin: 0;
+    width: 600px;
+}
+
+.container-quem-somos .servico-texto {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: black;
+    text-align: justify;
+    /* Alinha o texto pelo modo Justificado */
+    line-height: 1.6;
+    /* Opicional: melhora a legibilidade */
+}
+
+.container-quem-somos .servico-texto-realce {
+    color: #D43F38;
+    font-weight: bold;
+}
+
+/* container serviço */
+.container-servico {
+    background-color: #082946;
+    padding: 80px;
+    text-align: center;
+}
+
+.container-servico .servico-texto {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.alinhar-centro {
+    display: block;
+    text-align: center;
+    color: #D43F38;
+    font-weight: bold;
+}
+
+.container-servico .botoes-servicos {
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: center;
+    /* Centraliza os itens */
+}
+
+/* Estilo para os botões */
+.col-4 img {
+    width: 50px;
+    height: 50px;
+}
+
+.col-4 a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #008eb9;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.col-4 a:hover {
+    background-color: white;
+    color: black;
+}
+
+/************* Seção: Mapa *******************/
+#mapa {
+    background-image: url('../imagem/celular2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+#map {
+    margin-top: -107px;
+    margin-left: 45px;
+    /* border: solid red; */
+    border-radius: 0px 0px 15px 15px;
+    height: 625px;
+    width: 80%;
+}
+
+#mapa .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 100px;
+    width: 450px;
+    height: 450px;
+}
+
+#mapa .encontre h4 {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    /* justify-content: center; */
+    margin-top: 53px;
+    margin-left: -130px;
+    color: #082946;
+    background-color: #F2EFE9;
+    width: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#mapa::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* z-index: 1; */
+}
+
+.card-mapa {
+    position: absolute;
+    /* O botão será posicionado acima do mapa */
+    top: 50%;
+    /* Centraliza verticalmente em relação ao mapa */
+    left: 50%;
+    /* Centraliza horizontalmente em relação ao mapa */
+    transform: translate(-50%, -50%);
+    /* Ajusta para que o centro do botão fique no centro do mapa */
+    z-index: 10;
+    /* Garante que o botão fique acima do mapa */
+    margin-top: 115px;
+}
+
+#tracarRota {
+    padding: 2% 5px;
+    font-size: 14px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* border: solid red; */
+    margin-top: 405px;
+
+}
+
+#tracarRota:hover {
+    background-color: #495057;
+}
+
+/****************** Footer ****************/
+
+.rodape {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: relative;
+    background-color: #008eb9;
+    margin-top: 15px;
+    z-index: 0;
+    /* border: red solid; */
+}
+
+.card-body-1 {
+    position: relative;
+    text-align: left;
+    font-size: 15px;
+    /* border: solid red; */
+    width: 300px;
+}
+
+.card-body-1 h3 {
+    text-align: center;
+    color: black;
+}
+
+.card-body-1 li {
+    text-align: left;
+    color: white;
+}
+
+.card-body-2 {
+    padding: 0px;
+    text-align: left;
+}
+
+.card-body-2 h3 {
+    padding-top: 10px;
+    text-align: center;
+    margin-top: -45px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.card-body-3 {
+    text-align: left;
+}
+
+.card-body-3 h3 {
+    text-align: center;
+    color: black;
+}
+
+.servico-texto-realce {
+    text-align: center;
+    color: rgb(145, 43, 2);
+    font-weight: 500 bold;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.card-body-3 p {
+    text-align: center;
+    color: white;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+    /* Espaço entre os cards */
+    justify-content: space-evenly;
+    /* Cada card ocupa a mesma largura */
+    flex: 1;
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque */
+    transition: transform 0.3s;
+    /*Efeito de transição suave*/
+    margin: 10px;
+    /* Margem horizontal para espaçamento */
+    margin-left: 20px;
+    /* border: solid red; */
+}
+
+.card-group:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Ícones das redes sociais */
+.social-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin: 0;
+    /* Remover margens para evitar problemas de layout */
+    /* border-radius: 50%; */
+    /* box-sizing: border-box; */
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Corrigido para 'center' */
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 2.5em;
+    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    /* Efeito de espelhamento */
+}
+
+.social-icons a:hover {
+    background: var(--color);
+    color: black;
+    box-shadow:
+        0 0 5px var(--color),
+        0 0 25px var(--color),
+        0 0 50px var(--color),
+        0 0 200px var(--color);
+}
+
+.social-icons .facebook {
+    color: #ddd;
+    /* Azul do Facebook */
+}
+
+.social-icons .instagram {
+    color: #ddd;
+    /* Rosa do Instagram */
+}
+
+.social-icons .whatsapp {
+    color: #ddd;
+    /* Verde do WhatsApp */
+}
+
+.social-icons .email {
+    color: #ddd;
+    /* Verde do WhatsApp */
+}
+
+.social-icons i {
+    font-size: 2rem;
+}
+
+/********* Rodapé DevRGT *************/
+.rodape-DevRGT {
+    background-color: #333;
+    /* Cor de fundo */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 10px;
+    /* Aumente para garantir espaçamento entre o rodapé principal e o DevRGT */
+    z-index: 10;
+    /* Garanta que a seção esteja acima de outras */
+    position: relative;
+}
+
+.rodape-DevRGT .interface {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rodape-DevRGT .line-footer {
+    margin-bottom: 10px;
+}
+
+.rodape-DevRGT .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-DevRGT .logo-footer img {
+    max-height: 20px;
+}
+
+.rodape-DevRGT .btn-social a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.rodape-DevRGT .btn-social button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.rodape-DevRGT .btn-social button:hover {
+    background-color: #f36f6f;
+}
+
+.rodape-DevRGT .line-footer .designby {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.rodape-DevRGT .line-footer .designby span {
+    color: #ff8400;
+    font-weight: bold;
+}
+
+.rodape-DevRGT #falecom {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsividade para diferentes tamanhos de tela */
+
+/* Tablets em modo retrato e paisagem */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .container-fluid {
+        text-align: center;
+    }
+
+    .navbar-brand .img-fluid {
+        display: inline-block;
+    }
+
+    h1.texto {
+        font-size: 1.5rem;
+    }
+
+    .container-quem-somos.servico {
+        width: 80%;
+        /* Torna a largura dos serviços mais estreita */
+    }
+
+    .container-servico {
+        padding: 40px 20px;
+        /* Ajusta o padding para telas menores */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        /* Organiza os links em coluna */
+    }
+
+    .container-video-apresenta {
+        height: auto;
+        /* Ajusta a altura do container para telas menores */
+    }
+
+    /* video*/
+    .apresenta {
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    #meuVideo {
+        justify-content: left;
+        width: 450px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    /* mapa*/
+    #map {
+        height: 150px;
+        margin-left: 63px;
+        /* border: solid red; */
+        border-radius: 0px 0px 15px 15px;
+        height: 560px;
+        width: 70%;
+    }
+
+    #mapa .content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-top: 100px;
+        width: 450px;
+        height: 400px;
+    }
+
+    #mapa .encontre h4 {
+        display: flex;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -8px;
+        margin-left: -10px;
+        color: #082946;
+        background-color: #F2EFE9;
+        width: 316px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #tracarRota {
+        margin-top: 315px;
+    }
+
+    /* Rodapé Principal */
+    .rodape {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rodape .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que os elementos quebrem a linha quando necessário */
+        /* justify-content: space-between; Espaçamento entre os itens */
+
+    }
+
+    /* Venha nos visitar alinhado à esquerda */
+    .card-body-1 {
+        flex: 1;
+        /* text-align: left; */
+        max-width: 100%;
+        /* Limita a largura */
+        /* border: solid red; */
+    }
+
+    /* Horários da Academia alinhado à direita */
+    .card-body-3 {
+        flex: 1;
+        /* text-align: right; */
+        max-width: 100%;
+        /* Limita a largura */
+
+    }
+
+    /* Siga-nos nas redes sociais centralizado abaixo */
+    .card-body-2 {
+        justify-content: space-between;
+        justify-items: center;
+        width: 100%;
+        /* text-align: center; */
+        margin-top: 20px;
+        /* Adiciona margem entre os cards */
+        /* border: solid green; */
+    }
+
+    .social-icons a {
+        /* margin: 0 10px; */
+        color: white;
+        text-decoration: none;
+        /* border: solid red; */
+    }
+
+    .rodape-DevRGT .flex {
+        flex-direction: column;
+        /* Organiza o rodapé em coluna */
+    }
+}
+
+/* Responsividade para Notebook */
+@media (min-width: 1152px) {
+
+    /* Ajustes gerais para notebooks */
+    .container-fluid {
+        padding: 20px;
+        /* Ajuste do padding do contêiner */
+    }
+
+    /* Ajuste no cabeçalho */
+    h1.texto {
+        font-size: 2rem;
+        /* Ajusta o tamanho da fonte do título */
+    }
+
+    /* Ajustes gerais de imagem */
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        /* Garante que as imagens ocupem 100% da largura */
+    }
+
+    /* Ajuste de fonte no menu de navegação */
+    .navbar-nav {
+        font-size: 1.4rem;
+        /* Aumenta o tamanho da fonte para o menu de navegação */
+    }
+
+    /* Container de vídeo de apresentação */
+    .container-video-apresenta {
+        height: auto;
+        /* Ajusta a altura do container para telas menores */
+    }
+
+    .apresenta {
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    #meuVideo {
+        justify-content: left;
+        width: 450px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    /* Ajuste de botões */
+    .btn.btn-secondary {
+        width: 25%;
+        /* Ajusta o botão para 25% da largura */
+    }
+
+    /* Ajustes no layout da seção "Quem Somos" */
+    .container-quem-somos .servico {
+        width: 60%;
+        /* Torna os serviços mais estreitos */
+    }
+
+    /* Ajuste para o mapa */
+    #map {
+        margin-left: 95px;
+        border-radius: 0px 0px 15px 15px;
+        height: 442px;
+        width: 56%;
+        margin-top: -7px;
+    }
+
+    .encontre h4 {
+        display: flexbox;
+        position: absolute;
+        text-align: left;
+        justify-content: center;
+        margin-top: 53px;
+        margin-left: -130px;
+        color: #082946;
+        background-color: #F2EFE9;
+        width: 250px;
+        border-radius: 10px 10px 0px 0px;
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    #tracarRota {
+        margin-top: 225px;
+        font-size: smaller;
+        padding: 0 3px;
+    }
+
+    /* Ajuste dos ícones de redes sociais e Rodapé */
+
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rodape .card-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Venha nos visitar alinhado à esquerda */
+    .card-body-1 {
+        flex: 1;
+        /* text-align: left; */
+        max-width: 100%;
+        /* Limita a largura */
+        /* border: solid red; */
+    }
+
+    /* Horários da Academia alinhado à direita */
+    .card-body-3 {
+        flex: 1;
+        /* text-align: right; */
+        max-width: 100%;
+        /* Limita a largura */
+
+    }
+
+    /* Siga-nos nas redes sociais centralizado abaixo */
+    .card-body-2 {
+        justify-content: space-between;
+        justify-items: center;
+        width: 100%;
+        /* text-align: center; */
+        margin-top: 20px;
+        /* Adiciona margem entre os cards */
+        /* border: solid green; */
+    }
+
+    .social-icons a {
+        /* margin: 0 10px; */
+        color: white;
+        text-decoration: none;
+        /* border: solid red; */
+    }
+
+    .rodape-DevRGT .flex {
+        flex-direction: column;
+        /* Organiza o rodapé em coluna */
+    }
+}
+
+
+/* Responsividade para dispositivos móveis */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* área do cabeçalho */
+    h1.texto {
+        font-size: medium;
+    }
+
+    /* Esconde o menu de navegação (navbar-collapse) por padrão */
+    .navbar-collapse {
+        display: none;
+        /* Menu oculto por padrão */
+    }
+
+    /* Exibe o menu quando o mouse passar sobre o botão de navegação */
+    .navbar:hover .navbar-collapse {
+        display: block;
+        /* Torna o menu visível ao passar o mouse sobre o menu */
+    }
+
+    /* Exibe o menu ao passar o mouse diretamente sobre o menu */
+    .navbar-collapse:hover {
+        display: block;
+        /* O menu permanece visível enquanto o mouse estiver sobre ele */
+    }
+
+    /* Ajusta o botão de hambúrguer */
+    .navbar-toggler {
+        border: none;
+        /* Remove a borda do botão */
+    }
+
+    /* Estiliza o ícone do hambúrguer */
+    .navbar-toggler-icon {
+        background-color: #fff;
+        /* Torna o ícone visível */
+    }
+
+    /* Organiza os itens de navegação em coluna */
+    .navbar-nav {
+        flex-direction: column;
+        /* Coloca os itens em coluna */
+        text-align: center;
+        /* Centraliza os itens */
+        padding: 10px 0;
+        /* Adiciona padding entre os itens */
+    }
+
+    /* Ajusta os itens de navegação */
+    .nav-item {
+        margin-bottom: 10px;
+        /* Espaço entre os itens */
+    }
+
+    /* Ajuste do link */
+    .nav-link {
+        font-size: 18px;
+        /* Aumenta o tamanho da fonte */
+        padding: 10px 15px;
+        /* Adiciona padding para melhorar a área clicável */
+    }
+
+    /* área do vídeo */
+    .container-video-apresenta h1,
+    .container-video-apresenta h4 {
+        font-size: medium;
+        /* Ajusta o tamanho da fonte para h1 e h4 */
+    }
+
+    .container-video-apresenta {
+        display: contents;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        /* Ajusta a altura do container para telas menores */
+        width: 100%;
+        /* Ajusta a largura */
+        padding: 10px;
+        /* Adiciona um pouco de espaçamento interno */
+        box-sizing: border-box;
+        /* Para garantir que padding não afete a largura total */
+        background-color: rgb(0, 0, 0);
+        border: solid red;
+    }
+
+    .apresenta {
+        background-image: url(../imagem/tela-video-transp.png);
+        background-size: contain;
+        /* Faz com que a imagem de fundo cubra toda a área */
+        background-position: center;
+        /* Centraliza a imagem de fundo */
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* Faz o contêiner ocupar toda a largura */
+        height: 90%;
+        /* Faz o contêiner ocupar toda a altura disponível */
+        margin: 0;
+    }
+
+    #meuVideo {
+        width: 50%;
+        /* Ajusta a largura do vídeo */
+        height: 10%;
+        /* Mantém a proporção do vídeo */
+        object-fit: cover;
+        /*Faz o vídeo preencher o contêiner sem distorção */
+        margin-top: 3px;
+    }
+
+    /* Ajuste dos itens de área serviços  */
+
+    .container-servico .servico-texto {
+        font-size: medium;
+        text-align: center;
+        width: 250px;
+        align-items: center;
+        margin-left: -50px;
+    }
+
+    .container-servico .botoes-servicos {
+        padding: 5px;
+        justify-content: space-between;
+        /* Centraliza os itens */
+    }
+
+    .col-4 {
+        width: 50%;
+        /* Tamanho de cada botão em uma linha (dois botões por linha) */
+        margin: 5px;
+        /* Espaço entre os botões */
+    }
+
+    /* Opcional: Ajustar o tamanho da imagem dos botões para se ajustarem bem nas telas menores */
+    .col-4 img {
+        width: 60px;
+        height: 20px;
+    }
+
+    /* Ajuste dos itens de página Quem Somos */
+    .container-quem-somos .servico {
+        width: 90%;
+        /* Ajusta a largura do serviço */
+        font-size: small;
+    }
+
+    .btn.btn-secondary {
+        font-size: 15px;
+        width: 50%;
+
+    }
+
+    /* Ajuste dos itens de área do mapa */
+    #mapa {
+        height: 100%;
+
+    }
+
+    #map {
+        margin-left: 115px;
+        border-radius: 0px 0px 15px 15px;
+        height: 85%;
+        width: 47%;
+        margin-top: 15px;
+    }
+
+    .card-mapa {
+        margin-top: -3px;
+    }
+
+    #mapa .encontre h4 {
+        display: flex;
+        position: absolute;
+        margin-top: 85px;
+        margin-left: -110px;
+        color: #082946;
+        background-color: #F2EFE9;
+        width: 210px;
+        border-radius: 10px 10px 0px 0px;
+        font-size: small;
+        font-weight: bold;
+        /* border: solid green; */
+    }
+
+    #tracarRota {
+        display: flex;
+        font-size: smaller;
+        padding: 0 3px;
+        /* border: solid green; */
+        margin-top: 380px;
+    }
+
+    /* Ajuste dos itens de área do footer */
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rodape .card-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Venha nos visitar alinhado à esquerda */
+    .card-body-1 {
+        flex: 1;
+        /* text-align: left; */
+        max-width: 100%;
+        /* Limita a largura */
+        /* border: solid red; */
+    }
+
+    /* Horários da Academia alinhado à direita */
+    .card-body-3 {
+        flex: 1;
+        /* text-align: right; */
+        max-width: 100%;
+        /* Limita a largura */
+
+    }
+
+    /* Siga-nos nas redes sociais centralizado abaixo */
+    .card-body-2 {
+        justify-content: space-between;
+        justify-items: center;
+        width: 100%;
+        /* text-align: center; */
+        margin-top: 20px;
+        /* Adiciona margem entre os cards */
+        /* border: solid green; */
+    }
+
+    .social-icons a {
+        /* margin: 0 10px; */
+        color: white;
+        text-decoration: none;
+        /* border: solid red; */
+        width: 50px;
+    }
+
+}
+
+
+/* Smart TVs */
+@media (max-width: 1920px) {
+    .container-video-apresenta {
+        height: 500px;
+        /* Ajusta o vídeo para Smart TVs */
+    }
+
+    .navbar-nav {
+        font-size: 1.5rem;
+        /* Aumenta a fonte dos itens do menu */
+    }
+
+    .social-icons a {
+        font-size: 3rem;
+        /* Aumenta o tamanho dos ícones sociais */
+    }
+
+    .card-group {
+        flex-direction: row;
+        /* Organiza os cards em linha */
+    }
+
+    .rodape {
+        height: auto;
+        padding: 50px 20px;
+        /* Ajusta o padding para a Smart TV */
+    }
+}
